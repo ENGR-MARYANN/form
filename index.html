@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: beige;
+            font-family: calibri;
+            
+        }
+        h1{
+            font-size: 50px;
+        }
+        input{
+            background-color:azure;
+        }
+        select{
+            background-color:azure;
+        }
+        textarea{
+            background-color:azure; 
+        }
+        button{
+            background-color:azure;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <h1>SCHOOL REGISTRATION FORM</h1>
+    <h2><u>MARYANN'S SECONDARY SCHOOL</u></h2>
+    <!-- <form action="tdk.htm" method="post"></form>
+    <table align="center"></table> -->
+     <fieldset>
+        <legend><b>PERSONAL DETAILS</b></legend>
+        <label for="fn"><b>First Name:</b></label>
+        <input type="text" size="100" placeholder="First Name" required><br><br>
+        <label for="Mn"><b>Middle Name:</b></label>
+        <input type="text" size="100" placeholder="Middle Name" required><br><br>
+        <label for="ln"><b>Last Name:</b></label>
+        <input type="text" size="100" placeholder="Last Name" required><br><br>
+    
+        <label for="country"><b>Country:</b></label>
+          <select  name="country">
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="Other">Other</option>
+          </select>
+        <label for="dob"><b>Date of Birth:</b></label>
+        <input type="date" required><br><br>
+        <label><b>Gender:</b></label><br>
+            <input type="radio">
+            <label for="Male"><b>Male</b></label>
+            <input type="radio" name="gender" value="Female">
+            <label for="Female"><b>Female</b></label>
+            <input type="radio" name="gender" value="Others">
+            <label for="Others"><b>Others</b></label><br><br>
+        <label for="Email-Id"><b>Email-Id:</b></label>
+        <input type="email" size="100" placeholder="Email-Adrress" name="email" required><br><br>
+        <label><b>Address:</b></label>
+        <textarea cols="50"placeholder="fill in your address details" rows="6"></textarea><br><br>
+        <label for="Username"><b> Username:</b></label>
+        <input type="text" placeholder="Username" required><br><br>
+        <label for="password"><b>Password:</b></label>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <label for="confirm_password"><b>Confirm Password:</b></label>
+        <input type="password" name="confirm_password" placeholder="Confirm_password" required><br><br>
+        <hr>
+        <label><b>Class:</b></label>
+        <select>
+            <option value="Cls">Class</option>
+            <option value="js1">js1</option>
+            <option value="js2">js2</option>
+            <option value="js3">js3</option>
+            <option value="ss1">ss1</option>
+            <option value="ss2">ss2</option>
+        </select>
+        <label><b>Course:</b></label>
+        <select>
+            <option value="Course">Course</option>
+            <option value="Bss">Business Studies</option>
+            <option value="ACC">Accounting</option>
+            <option value="STAT">Statistics</option>
+            <option value="Maths">Mathematics</option>
+            <option value="ECON">Economics</option>
+        </select>
+    </fieldset>
+    <button type="submit">Register</button>
+    <button type="reset"> Reset  </button>
+</form>
+<footer>
+    <address>
+        <small>Designed By:MARYANN</small>
+        <small>copy right &copy; 2023</small>
+    </address>
+    <details>
+        <summary>About Registration</summary>
+    </details>
+</footer>
+</body>
+</html>
